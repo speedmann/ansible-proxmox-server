@@ -1,0 +1,7 @@
+---
+lounge_ssl: "true"
+lounge_ssl_path: "{{ ACME_PATH }}"
+lounge_ssl_name: "{{ ACME_DOMAIN }}"
+lounge_users:
+      - user: speedmann
+        hashed_password: "{{ IRC_PASSWORD }}"

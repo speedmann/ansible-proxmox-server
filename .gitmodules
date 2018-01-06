@@ -1,0 +1,9 @@
+[submodule "roles/ovh"]
+	path = roles/ovh
+	url = git@github.com:speedmann/ansible-role-ovh.git
+[submodule "roles/thelounge"]
+	path = roles/thelounge
+	url = git@github.com:speedmann/ansible-lounge.git
+[submodule "roles/acme.sh"]
+	path = roles/acme.sh
+	url = git@github.com:speedmann/ansible-acme-sh.git

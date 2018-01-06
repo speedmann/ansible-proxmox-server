@@ -1,0 +1,5 @@
+---
+ACME_DOMAIN: "{{ inventory_hostname }}"
+ACME_PATH: /etc/lounge/ssl/
+ACME_USER: lounge
+ACME_GROUP: lounge
