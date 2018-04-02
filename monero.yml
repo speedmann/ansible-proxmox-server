@@ -1,22 +1,22 @@
 ---
-- hosts: "{{ groups['irc']|first }}"
+- hosts: "{{ groups['monero']|first }}"
   connection: local
-  gather_facts: no
   vars:
     ansible_python_interpreter: '{{ansible_playbook_python}}'
+  gather_facts: no
   tasks:
     - include_role:
         name: ovh
       delegate_to: localhost
-- hosts: irc
+- hosts: monero
   remote_user: root
   pre_tasks:
     - name: 'install python2'
       raw: sudo apt-get -y install python-simplejson
   roles:
-    - acme.sh
-    - thelounge
   tasks:
+    - include_role:
+        name: ansible-monero-node
     - name: Copy ssh keys
       authorized_key:
         user: root

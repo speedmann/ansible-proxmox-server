@@ -7,3 +7,6 @@
 [submodule "roles/acme.sh"]
 	path = roles/acme.sh
 	url = git@github.com:speedmann/ansible-acme-sh.git
+[submodule "roles/ansible-monero-node"]
+	path = roles/ansible-monero-node
+	url = git@github.com:speedmann/ansible-monero-node.git
